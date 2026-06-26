@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Приглашение на день рождение</title>
+
+    <link rel="stylesheet" href="./styles/normal.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#main_page">Главная</a></li>
+                <li><a href="#main_event" style="white-space: nowrap;">О событии</a></li>
+                <li><a href="#details">Детали</a></li>
+                <li><a href="#footer">Заявка</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="main_page">
+            <!-- Главная страница -->
+
+            <h1>Приглашаем вас на мое День рождение !</h1>
+            <a class="shadow button" href="#footer">Форма подачи заявки</a>
+        </section>
+
+        <section class="shadow base_card" id="main_event">
+            <!-- Блок с описанием главного события на сайте -->
+
+            <aside id="main_event__description">
+                <h2 class="card_title_left">Главное событие - это МЫ вместе</h2>
+
+                <div>
+                    <img id="quotation_mark_1" src="./public/quotation_mark.svg" alt="">
+                    <p id="main_event__text">Сегодня мы собрались не просто ради даты в календаре. Этот вечер — про искренние улыбки, тепло объятий и ту особую энергию, которая возникает, когда в одной комнате собираются самые близкие люди.</p>
+                    <img id="quotation_mark_2" src="./public/quotation_mark.svg" alt="">
+                </div>
+            </aside>
+
+            <aside id="main_event__images">
+                <div>
+                    <img class="shadow" src="./public/fon_img_7.avif" alt="">
+                </div>
+                <div>
+                    <img class="shadow" src="./public/fon_img_3.jpg" alt="">
+                </div>
+                <div>
+                    <img class="shadow" src="./public/fon_img_4.webp" alt="">
+                </div>
+                <div>
+                    <img class="shadow" src="./public/fon_img_6.webp" alt="">
+                </div>
+            </aside>
+        </section>
+
+        <section class="shadow base_card" id="details">
+            <!-- Блок с деталями мероприятия -->
+
+            <aside id="details__map">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1854.6641639295638!2d38.671123328203905!3d55.31944991799162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414a61e59891f94b%3A0x77dcc275fb3dbf2f!2z0J_QsNGA0Log0KPRgdCw0LTRjNCx0Ysg0JrRgNC40LLRj9C60LjQvdC-!5e0!3m2!1sru!2sru!4v1782410480338!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+            </aside>
+
+            <aside id="details__description">
+                <h2 class="card_title_right">Детали: дата, время, адрес проведения мероприятия</h2>
+
+                <div>
+                    <div>
+                        <img src="/public/point.svg" alt="">
+                        <p>г. Воскресенск, усадьба Кривякино</p>
+                    </div>
+                    <div>
+                        <img src="./public/date.svg" alt="">
+                        <p>12.07.2026</p>
+                    </div>
+                    <div>
+                        <img src="./public/time.svg" alt="">
+                        <p>9.00 по МСК</p>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <section>
+            <!-- Форма отправки обратной связи -->
+
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <h2>Заявка на мероприятие</h2>
+
+                <input type="hidden" name="access_key" value="2f1f0478-ef9d-4435-9275-32265dc800bd">
+
+                <input class="shadow" type="text" name="name" maxlength="50" minlength="5" placeholder="ФИО" required>
+                <input class="shadow" type="tel" name="phone" placeholder="Телефон" required>
+
+
+                <button class="shadow button" type="submit">Подать заявку</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <!-- Подвал сайта -->
+
+        <a href="">
+            <img src="./public/vk.svg" alt="">
+        </a>
+
+        <a href="">
+            <img src="./public/telegram.svg" alt="">
+        </a>
+    </footer>
+</body>
+</html>
